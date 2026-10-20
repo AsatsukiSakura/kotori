@@ -10,7 +10,7 @@ const RECENT_LIMIT = 5;
 const BEST_LIMIT = 5;
 
 export const HELP_TEXT = [
-  "ebot 本地 osu! 查询（osu!standard），可用命令：",
+  "kotori 本地 osu! 查询（osu!standard），可用命令：",
   "  recent <用户名或ID>   最近成绩（含未通过，最多 5 条）",
   "  bp <用户名或ID>       最佳成绩 BP（前 5 条，含加权 PP）",
   "  info <用户名或ID>     玩家信息（排名 / PP / 准确率等）",

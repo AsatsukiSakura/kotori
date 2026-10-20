@@ -1,14 +1,14 @@
-# ebot - osu! 查分转发 + graveyard 补刀机器人
+# kotori - osu! 查分转发 + graveyard 补刀机器人
 
 ## 架构
 
 ```
-QQ群 → NapCat/LLOneBot → ebot → ws://botws.desu.life:65000 (KanonBot)
+QQ群 → NapCat/LLOneBot → kotori → ws://botws.desu.life:65000 (KanonBot)
                             │
                             └→ osu! API v2 (graveyard 检测) → SQLite 本地库
 ```
 
-ebot 作为中间转发层：
+kotori 作为中间转发层：
 - 收到 QQ 命令 → 转发给 KanonBot（图片渲染、PP计算、ranked 图查询）
 - KanonBot 的结果原样转发回 QQ 群
 - 同时独立检测 graveyard 谱面 → 自动入库 → 文字补充信息
@@ -58,16 +58,16 @@ npm start
 ## 工作流程
 
 1. 用户在QQ群发 `!recent peppy` 或 `!信息 peppy`
-2. ebot 收到消息 → 转发给 KanonBot WS → KanonBot 查分渲染图片
-3. KanonBot 的结果 → ebot 转发回 QQ 群（文字 + 图片）
-4. 同时 ebot 调 osu! API 查近期成绩 → 检测 graveyard 谱面
+2. kotori 收到消息 → 转发给 KanonBot WS → KanonBot 查分渲染图片
+3. KanonBot 的结果 → kotori 转发回 QQ 群（文字 + 图片）
+4. 同时 kotori 调 osu! API 查近期成绩 → 检测 graveyard 谱面
 5. 发现 graveyard → 查本地 SQLite → 没有就拉取存入 → 补一条文字信息
 
 ## 命令列表
 
 | 命令 | 说明 |
 |------|------|
-| `!recent <用户名>` | 近期成绩 (KanonBot 图片 + ebot graveyard 补刀) |
+| `!recent <用户名>` | 近期成绩 (KanonBot 图片 + kotori graveyard 补刀) |
 | `!bp <用户名>` | 最佳成绩 |
 | `!信息 <用户名>` | 玩家信息 |
 | `!score <谱面ID>` | 查谱面 |

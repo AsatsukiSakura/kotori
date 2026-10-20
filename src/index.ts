@@ -1,5 +1,5 @@
-// ebot - QQ ↔ KanonBot 消息转发机器人
-// 架构: QQ → NapCat → ebot → KanonBot（图片渲染） → ebot → NapCat → QQ
+// kotori - QQ ↔ KanonBot 消息转发机器人
+// 架构: QQ → NapCat → kotori → KanonBot（图片渲染） → kotori → NapCat → QQ
 import { config } from "dotenv";
 config();
 

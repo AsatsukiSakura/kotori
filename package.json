@@ -1,5 +1,5 @@
 {
-  "name": "ebot",
+  "name": "kotori",
   "version": "1.0.0",
   "description": "QQ ↔ KanonBot 消息转发机器人",
   "main": "dist/index.js",

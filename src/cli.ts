@@ -1,4 +1,4 @@
-// ebot 本地命令行入口：直连 osu! API v2 查询
+// kotori 本地命令行入口：直连 osu! API v2 查询
 // 用法：
 //   npm run cli                       进入交互式 REPL
 //   npm run cli -- recent peppy       带参数则执行一次后退出
@@ -51,7 +51,7 @@ async function main(): Promise<void> {
   }
 
   // 交互模式
-  console.log("ebot 本地 osu! 查询已启动（输入 help 查看命令，exit 退出）");
+  console.log("kotori 本地 osu! 查询已启动（输入 help 查看命令，exit 退出）");
   console.log(HELP_TEXT);
 
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });

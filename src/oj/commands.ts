@@ -4,7 +4,7 @@ import { atCoderUserExists, getAtCoderRatingHistory, getCodeforcesUser } from ".
 import { renderAtCoderCard, renderCodeforcesCard } from "./image";
 
 export const HELP_TEXT = [
-  "ebot 本地命令（直接输入，无需前缀）：",
+  "kotori 本地命令（直接输入，无需前缀）：",
   "  cal <表达式>      五则运算 + - * / %（/ 为整除，向零取整）与括号",
   "  cf <handle>       Codeforces 当前/最高 rating（图片卡片）",
   "  at <username>     AtCoder 当前/最高 rating（图片卡片）",
