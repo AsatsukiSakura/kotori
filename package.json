@@ -1,0 +1,23 @@
+{
+  "name": "ebot",
+  "version": "1.0.0",
+  "description": "QQ ↔ KanonBot 消息转发机器人",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "cli": "ts-node src/cli.ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/ws": "^8.5.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.11",
+    "dotenv": "^17.4.2",
+    "ws": "^8.16.0"
+  }
+}
